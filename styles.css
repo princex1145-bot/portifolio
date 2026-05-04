@@ -25,6 +25,21 @@ body {
   background: radial-gradient(circle at 15% -20%, #10351f 0%, var(--bg) 35%, #04080a 90%);
 }
 
+body.locked {
+  overflow: hidden;
+}
+
+body.light-mode {
+  --bg: #f2fff8;
+  --bg-2: #dcf8ea;
+  --surface: #ffffff;
+  --text: #0f2e1f;
+  --muted: #365c49;
+  --primary: #0fbf69;
+  --accent: #34e28b;
+  --line: #8cc9a9;
+}
+
 .matrix-canvas {
   position: fixed;
   inset: 0;
@@ -61,6 +76,47 @@ main,
 .container {
   width: min(1120px, 92%);
   margin: 0 auto;
+}
+
+.entry-gate {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  display: grid;
+  place-items: center;
+  background: rgba(3, 10, 7, 0.82);
+  backdrop-filter: blur(8px);
+}
+
+.entry-gate.hidden {
+  display: none;
+}
+
+.entry-card {
+  width: min(430px, 92%);
+  border: 1px solid #2b7b58;
+  border-radius: 16px;
+  padding: 1.2rem;
+  background: rgba(5, 20, 12, 0.95);
+}
+
+.entry-form {
+  display: grid;
+  gap: 0.7rem;
+  margin-top: 0.8rem;
+}
+
+.entry-form label {
+  color: #bfffe0;
+  font-weight: 600;
+}
+
+.entry-form input {
+  border-radius: 10px;
+  border: 1px solid #2a855d;
+  background: #06170f;
+  color: #d6ffe8;
+  padding: 0.65rem 0.72rem;
 }
 
 .section {
@@ -114,6 +170,32 @@ nav a:hover {
   grid-template-columns: 1.2fr 0.8fr;
   gap: 1.2rem;
   align-items: center;
+}
+
+.tools-section {
+  padding-bottom: 0;
+}
+
+.tools-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1rem;
+  background: linear-gradient(170deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0)),
+    var(--surface);
+}
+
+.tools-note {
+  margin: 0.2rem 0 0;
+}
+
+.tool-actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
 }
 
 .eyebrow {
@@ -398,5 +480,10 @@ li {
 
   nav.open {
     display: flex;
+  }
+
+  .tools-card {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

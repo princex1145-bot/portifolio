@@ -18,6 +18,17 @@
   </head>
   <body>
     <canvas id="matrixCanvas" class="matrix-canvas" aria-hidden="true"></canvas>
+    <section id="entryGate" class="entry-gate">
+      <div class="entry-card">
+        <h2>Secure Entry</h2>
+        <p>Enter your name to access this advanced portfolio dashboard.</p>
+        <form id="entryForm" class="entry-form">
+          <label for="visitorName">Your Name</label>
+          <input id="visitorName" name="visitorName" type="text" maxlength="40" required />
+          <button class="btn btn-primary" type="submit">Enter Portfolio</button>
+        </form>
+      </div>
+    </section>
     <header class="header">
       <div class="container nav-wrap">
         <a class="logo" href="#">TEPPALA ABHILASH</a>
@@ -32,6 +43,23 @@
     </header>
 
     <main>
+      <section class="section tools-section">
+        <div class="container">
+          <div class="tools-card reveal">
+            <div>
+              <p class="eyebrow">Advanced Tools & Options</p>
+              <h3 id="welcomeText">Welcome, Guest</h3>
+              <p class="tools-note">Use these controls to personalize and interact with the portfolio.</p>
+            </div>
+            <div class="tool-actions">
+              <button id="themeToggle" class="btn btn-secondary" type="button">Toggle Theme</button>
+              <button id="downloadContact" class="btn btn-secondary" type="button">Download Contact Card</button>
+              <button id="resetEntry" class="btn btn-secondary" type="button">Reset Entry Name</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="hero section">
         <div class="container hero-grid">
           <div class="reveal">
