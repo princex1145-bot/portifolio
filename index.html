@@ -5,59 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Advanced portfolio of a Mechanical Engineering student with Cybersecurity skills."
+      content="Portfolio of Teppala Abhilash, Mechanical Engineering student with cybersecurity and networking interests."
     />
-    <title>Teppala Abhilash | Mechanical Engineering & Cybersecurity</title>
+    <title>Teppala Abhilash | Mechanical Engineering Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container nav-wrap">
-        <a href="#" class="logo">TEPPALA ABHILASH<span>.MECHSEC</span></a>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">Menu</button>
-        <nav id="siteNav">
+    <header class="header">
+      <div class="container nav">
+        <a href="#" class="logo">TEPPALA ABHILASH</a>
+        <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">Menu</button>
+        <nav id="menu">
           <a href="#about">About</a>
-          <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
-          <a href="#timeline">Timeline</a>
+          <a href="#highlights">Highlights</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="hero section">
+      <section class="hero">
         <div class="container hero-grid">
           <div>
-            <p class="eyebrow">Mechanical Engineering Student | Cybersecurity Practitioner</p>
-            <h1>
-              Teppala Abhilash -
-              Building resilient systems from
-              <span>physical machines</span> to <span>digital networks</span>.
-            </h1>
-            <p class="hero-copy">
-              I design, analyze, and optimize mechanical systems while securing
-              OT/IT environments through ethical hacking, threat modeling, and
-              defensive engineering.
+            <p class="tag">Mechanical Engineering Student</p>
+            <h1>Building future-ready solutions across mechanical systems and cyber domains.</h1>
+            <p>
+              I am a Mechanical Engineering student from Acharya Nagarjuna University College of
+              Engineering and Technology, interested in the mechanical industry and cybersecurity.
+              I am currently learning networking to build strong technical depth in both OT and IT worlds.
             </p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="#projects">View Projects</a>
-              <a class="btn btn-outline" href="#contact">Hire / Collaborate</a>
-            </div>
+            <a class="btn" href="#contact">Contact Me</a>
           </div>
-          <aside class="hero-card">
-            <h3>Current Focus</h3>
+          <aside class="card">
+            <h3>Quick Profile</h3>
             <ul>
-              <li>Finite Element Analysis (FEA)</li>
-              <li>Robotics and CAD/CAM workflows</li>
-              <li>Web App & Network Penetration Testing</li>
-              <li>Industrial Control System (ICS) security basics</li>
+              <li>College: ANU College of Engineering and Technology</li>
+              <li>Focus: Mechanical + Cybersecurity</li>
+              <li>Learning Path: Networking and security fundamentals</li>
             </ul>
           </aside>
         </div>
@@ -67,185 +58,92 @@
         <div class="container">
           <h2>About Me</h2>
           <p>
-            I am a multidisciplinary learner passionate about solving complex
-            engineering problems and securing critical infrastructure. My work
-            connects product design, data-driven performance optimization, and
-            cybersecurity best practices.
+            My goal is to become a professional who can design reliable engineering systems and also
+            understand how to secure modern connected environments. I enjoy hands-on learning, continuous
+            upskilling, and working on practical challenges that combine analysis, creativity, and discipline.
           </p>
-          <div class="stats-grid">
-            <article class="stat-card">
-              <h3>12+</h3>
-              <p>Academic and self-initiated projects completed</p>
-            </article>
-            <article class="stat-card">
-              <h3>5</h3>
-              <p>Security CTFs and lab environments solved</p>
-            </article>
-            <article class="stat-card">
-              <h3>3</h3>
-              <p>Core domains: Design, Simulation, and Security</p>
-            </article>
-            <article class="stat-card">
-              <h3>100%</h3>
-              <p>Commitment to safe, reliable, and ethical solutions</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="section">
-        <div class="container">
-          <h2>Featured Projects</h2>
-          <div class="project-grid">
-            <article class="project-card">
-              <h3>Autonomous Line-Following Rover</h3>
-              <p>
-                Designed chassis, powertrain, and sensor mounts; integrated PID
-                control and obstacle handling. Improved tracking accuracy by 23%.
-              </p>
-              <div class="tags">
-                <span>SolidWorks</span><span>Embedded C</span><span>Controls</span>
-              </div>
-            </article>
-            <article class="project-card">
-              <h3>FEA Optimization of Cantilever Bracket</h3>
-              <p>
-                Performed stress analysis and iterative redesign, reducing mass by
-                18% while maintaining safety factor under dynamic loading.
-              </p>
-              <div class="tags">
-                <span>ANSYS</span><span>FEA</span><span>Design Optimization</span>
-              </div>
-            </article>
-            <article class="project-card">
-              <h3>Web Application Security Assessment</h3>
-              <p>
-                Conducted OWASP Top 10 testing on a demo e-commerce app, finding
-                SQLi and insecure session handling; delivered remediation report.
-              </p>
-              <div class="tags">
-                <span>Burp Suite</span><span>OWASP</span><span>Secure Coding</span>
-              </div>
-            </article>
-            <article class="project-card">
-              <h3>Mini SOC Home Lab</h3>
-              <p>
-                Built a virtual SIEM pipeline with log forwarding, alert rules,
-                and incident playbooks for brute-force and malware indicators.
-              </p>
-              <div class="tags">
-                <span>SIEM</span><span>Linux</span><span>Incident Response</span>
-              </div>
-            </article>
-          </div>
         </div>
       </section>
 
       <section id="skills" class="section">
         <div class="container">
-          <h2>Skills Matrix</h2>
-          <div class="skills-grid">
-            <article class="skills-card">
-              <h3>Mechanical Engineering</h3>
+          <h2>Skills</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>Technical Skills</h3>
               <ul>
-                <li>CAD: SolidWorks, AutoCAD</li>
-                <li>Simulation: ANSYS, basic CFD</li>
-                <li>Manufacturing Processes</li>
-                <li>Materials and Tribology</li>
-                <li>Thermodynamics and Heat Transfer</li>
+                <li>CCNA</li>
+                <li>Python</li>
+                <li>CATIA</li>
+                <li>MS Office</li>
               </ul>
             </article>
-            <article class="skills-card">
-              <h3>Cybersecurity</h3>
+            <article class="card">
+              <h3>Core Interests</h3>
               <ul>
-                <li>Network and Web Pentesting</li>
-                <li>Vulnerability Assessment</li>
-                <li>Threat Modeling</li>
-                <li>Security Monitoring and SIEM</li>
-                <li>Linux Hardening and Scripting</li>
+                <li>Mechanical Industry Applications</li>
+                <li>Cybersecurity Foundations</li>
+                <li>Networking Concepts and Practice</li>
+                <li>Industry 4.0 and Secure Automation</li>
               </ul>
             </article>
-            <article class="skills-card">
-              <h3>Programming & Tools</h3>
+            <article class="card">
+              <h3>Strengths</h3>
               <ul>
-                <li>Python, C/C++, JavaScript</li>
-                <li>Git/GitHub</li>
-                <li>MATLAB basics</li>
-                <li>Wireshark, Nmap, Burp Suite</li>
-                <li>Fusion of OT + IT security concepts</li>
+                <li>Quick learner with consistent practice mindset</li>
+                <li>Adaptable to new tools and technologies</li>
+                <li>Strong commitment to career growth</li>
+                <li>Disciplined and goal oriented</li>
               </ul>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="timeline" class="section">
+      <section id="highlights" class="section">
         <div class="container">
-          <h2>Journey Timeline</h2>
-          <div class="timeline">
-            <article>
-              <h3>2023 - Foundation</h3>
+          <h2>Interesting Details</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>Career Vision</h3>
               <p>
-                Started mechanical design projects and strengthened fundamentals in
-                mechanics, materials, and machine drawing.
+                To work in the mechanical industry while developing expertise in cyber-aware engineering
+                systems, especially where networking and machine operations intersect.
               </p>
             </article>
-            <article>
-              <h3>2024 - Systems Thinking</h3>
+            <article class="card">
+              <h3>Current Learning Roadmap</h3>
               <p>
-                Expanded into robotics and control systems while beginning
-                cybersecurity labs and CTF exercises.
+                Advancing networking knowledge, strengthening Python for automation tasks, and applying
+                CAD design skills with CATIA for practical mechanical workflows.
               </p>
             </article>
-            <article>
-              <h3>2025 - Security Integration</h3>
+            <article class="card">
+              <h3>What I Bring</h3>
               <p>
-                Applied threat modeling to engineering workflows and learned secure
-                design approaches for connected devices.
+                A unique combination of mechanical background and cyber curiosity, useful for modern
+                industries that require both operational reliability and digital security awareness.
               </p>
             </article>
-            <article>
-              <h3>2026 - Professional Growth</h3>
-              <p>
-                Building a hybrid career path in product engineering, automation,
-                and cyber-resilience for industrial systems.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container certs">
-          <h2>Certifications & Learning</h2>
-          <div class="cert-grid">
-            <article class="cert-card">Google Cybersecurity Certificate (In Progress)</article>
-            <article class="cert-card">NPTEL Mechanical Design Course</article>
-            <article class="cert-card">TryHackMe / Hack The Box Labs</article>
-            <article class="cert-card">Python for Engineers</article>
           </div>
         </div>
       </section>
 
       <section id="contact" class="section contact">
         <div class="container">
-          <h2>Let’s Build Secure Engineering Solutions</h2>
-          <p>
-            Open to internships, research collaborations, and project-based
-            opportunities in mechanical design and cybersecurity.
-          </p>
-          <div class="contact-links">
-            <a href="mailto:youremail@example.com">youremail@example.com</a>
-            <a href="#" aria-label="LinkedIn Profile">LinkedIn</a>
-            <a href="#" aria-label="GitHub Profile">GitHub</a>
+          <h2>Contact Us</h2>
+          <p>Open to internships, projects, and professional collaboration opportunities.</p>
+          <div class="contact-list">
+            <a href="tel:9392138419">Mobile: 9392138419</a>
+            <a href="mailto:netaji1145@gmail.com">Email: netaji1145@gmail.com</a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="footer">
       <div class="container">
-        <p>© <span id="year"></span> Teppala Abhilash. Engineered with precision. Secured by design.</p>
+        <p>© <span id="year"></span> Teppala Abhilash | Mechanical Engineering Student</p>
       </div>
     </footer>
 
