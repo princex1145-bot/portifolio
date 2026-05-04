@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="bg-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-orb orb-2" aria-hidden="true"></div>
+    <div class="grid-overlay" aria-hidden="true"></div>
     <header class="header">
       <div class="container nav">
         <a href="#" class="logo">TEPPALA ABHILASH</a>
@@ -33,29 +36,50 @@
     <main>
       <section class="hero">
         <div class="container hero-grid">
-          <div>
-            <p class="tag">Mechanical Engineering Student</p>
+          <div class="reveal">
+            <p class="tag">Mechanical Engineering Student | Cybersecurity Learner</p>
             <h1>Building future-ready solutions across mechanical systems and cyber domains.</h1>
             <p>
               I am a Mechanical Engineering student from Acharya Nagarjuna University College of
               Engineering and Technology, interested in the mechanical industry and cybersecurity.
               I am currently learning networking to build strong technical depth in both OT and IT worlds.
             </p>
-            <a class="btn" href="#contact">Contact Me</a>
+            <div class="hero-actions">
+              <a class="btn" href="#contact">Contact Me</a>
+              <a class="btn btn-ghost" href="#skills">Explore Skills</a>
+            </div>
+            <div class="mini-stats">
+              <div><strong>CCNA</strong><span>Networking track</span></div>
+              <div><strong>CATIA</strong><span>Mechanical design</span></div>
+              <div><strong>Python</strong><span>Automation learning</span></div>
+            </div>
           </div>
-          <aside class="card">
+          <aside class="card reveal">
+            <div class="fusion-art" aria-hidden="true">
+              <div class="gear gear-lg"><span></span></div>
+              <div class="gear gear-md"><span></span></div>
+              <div class="gear gear-sm"><span></span></div>
+              <div class="cyber-elevation">
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </div>
             <h3>Quick Profile</h3>
             <ul>
               <li>College: ANU College of Engineering and Technology</li>
               <li>Focus: Mechanical + Cybersecurity</li>
               <li>Learning Path: Networking and security fundamentals</li>
             </ul>
+            <div class="chips">
+              <span>Industry 4.0</span>
+              <span>Secure Engineering</span>
+              <span>Career Ready</span>
+            </div>
           </aside>
         </div>
       </section>
 
       <section id="about" class="section">
-        <div class="container">
+        <div class="container reveal">
           <h2>About Me</h2>
           <p>
             My goal is to become a professional who can design reliable engineering systems and also
@@ -67,9 +91,9 @@
 
       <section id="skills" class="section">
         <div class="container">
-          <h2>Skills</h2>
+          <h2 class="reveal">Skills</h2>
           <div class="grid">
-            <article class="card">
+            <article class="card reveal">
               <h3>Technical Skills</h3>
               <ul>
                 <li>CCNA</li>
@@ -78,7 +102,7 @@
                 <li>MS Office</li>
               </ul>
             </article>
-            <article class="card">
+            <article class="card reveal">
               <h3>Core Interests</h3>
               <ul>
                 <li>Mechanical Industry Applications</li>
@@ -87,7 +111,7 @@
                 <li>Industry 4.0 and Secure Automation</li>
               </ul>
             </article>
-            <article class="card">
+            <article class="card reveal">
               <h3>Strengths</h3>
               <ul>
                 <li>Quick learner with consistent practice mindset</li>
@@ -102,23 +126,23 @@
 
       <section id="highlights" class="section">
         <div class="container">
-          <h2>Interesting Details</h2>
+          <h2 class="reveal">Interesting Details</h2>
           <div class="grid">
-            <article class="card">
+            <article class="card reveal">
               <h3>Career Vision</h3>
               <p>
                 To work in the mechanical industry while developing expertise in cyber-aware engineering
                 systems, especially where networking and machine operations intersect.
               </p>
             </article>
-            <article class="card">
+            <article class="card reveal">
               <h3>Current Learning Roadmap</h3>
               <p>
                 Advancing networking knowledge, strengthening Python for automation tasks, and applying
                 CAD design skills with CATIA for practical mechanical workflows.
               </p>
             </article>
-            <article class="card">
+            <article class="card reveal">
               <h3>What I Bring</h3>
               <p>
                 A unique combination of mechanical background and cyber curiosity, useful for modern
@@ -130,7 +154,7 @@
       </section>
 
       <section id="contact" class="section contact">
-        <div class="container">
+        <div class="container reveal">
           <h2>Contact Us</h2>
           <p>Open to internships, projects, and professional collaboration opportunities.</p>
           <div class="contact-list">
