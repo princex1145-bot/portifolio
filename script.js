@@ -12,6 +12,14 @@ if (menuBtn && menu) {
   });
 }
 
+document.querySelectorAll('nav a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", () => {
+    if (window.innerWidth <= 900 && menu) {
+      menu.classList.remove("open");
+    }
+  });
+});
+
 const revealEls = document.querySelectorAll(".reveal");
 const observer = new IntersectionObserver(
   (entries) => {
@@ -22,7 +30,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.14 }
+  { threshold: 0.12 }
 );
 
 revealEls.forEach((el) => observer.observe(el));
