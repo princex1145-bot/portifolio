@@ -25,6 +25,16 @@ body {
   background: radial-gradient(circle at 15% -20%, #10351f 0%, var(--bg) 35%, #04080a 90%);
 }
 
+.matrix-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.42;
+}
+
 body::before {
   content: "";
   position: fixed;
@@ -39,6 +49,13 @@ body::before {
     transparent 3px
   );
   opacity: 0.24;
+}
+
+.header,
+main,
+.footer {
+  position: relative;
+  z-index: 2;
 }
 
 .container {
@@ -113,7 +130,7 @@ nav a:hover {
 
 .animated-name {
   margin: 0.9rem 0 0.2rem;
-  font-size: clamp(2rem, 8vw, 5rem);
+  font-size: clamp(2.8rem, 11vw, 8rem);
   font-weight: 800;
   letter-spacing: 0.08em;
   color: #a8ffd3;
@@ -352,6 +369,10 @@ li {
 @media (max-width: 900px) {
   .hero-grid {
     grid-template-columns: 1fr;
+  }
+
+  .animated-name {
+    font-size: clamp(2.2rem, 13vw, 4.8rem);
   }
 
   .menu-btn {
